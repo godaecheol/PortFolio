@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-align: center; */
+}
+.top{
+
+}
+.top>ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 13.5%;
+    list-style: none;
+}
+.top>ul>li>a{
+    text-decoration: none;   
+    color: black;
+    display: block;
+    padding: 20px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+#button-profile{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    margin-left: 2px;
+}
+.top>ul>li>a:hover,.top>ul>li>a:active{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+.top>ul>li>a:visited{
+    /* color: black; */
+    text-decoration: none;   
+}
+
+.wap-body{
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    padding: 1% 5%;
+}
+.left{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(246, 251, 255);
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: start;
+    animation: slide-left 2s ease-out;
+    position: relative;
+
+
+}
+.right{
+    width: 40%;
+    background-color: rgb(246, 251, 255);
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    animation: slide-right 2s ease-out;
+    position: relative;
+
+}
+@keyframes slide-left {
+    from{
+        left: -100px;
+    }
+    to{
+        left: 0px;
+    }
+}
+@keyframes slide-right {
+    from{
+        right: -100px;
+    }
+    to{
+        right: 0px;
+    }
+}
+.right-top{
+    padding: 20px 20px;
+}
+#left-main{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+    padding: 20px;
+    
+}
+.profile{
+    padding: 20px;
+}
+.profile hr,.right-top hr{
+    margin-left: 20px;
+    
+    
+}
+.profile-text{
+    display: flex;
+    padding: 20px;
+    
+}
+.profile-text li{
+    list-style-type: none;
+    padding: 10px 20px;
+}
+.stap-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 20rem;
+    grid-gap: 40px 20px;
+    padding: 20px;
+    
+    
+}
+.stap-container>div>img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    
+    object-fit: cover;
+    border-radius: 20px;
+}
+.stap-container>div>img:hover{
+    cursor: pointer;
+}
+.middle-space{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 1000px;
+    border-radius: 4px;
+    color: white;
+    visibility: hidden;
+    background-color: rgb(63, 70, 75);
+    z-index: 1;
+
+}
+.middle-space-1,.middle-space-2,.middle-space-3,.middle-space-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 1000px;
+    background-color: rgb(63, 70, 75);
+    border-radius: 4px;
+    color: white;
+    visibility: hidden;
+    padding: 20px;
+}
+.middle-space-2{
+    /* visibility: visible; */
+}
+.middle-space-img{
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+}
+.middle-space-text{
+    margin-left: 20px;
+}
+.middle-space-text h1{
+    margin-bottom: 20px;
+}
+.middle-space-text h2{
+    display: inline-block;
+}
+.middle-space-text h2,p{
+    text-align: start;
+    margin-bottom: 20px;
+}
+.middle-space-text ul{
+    display: flex;
+}
+.middle-space-text li{
+    
+    text-align: start;
+    margin: 20px;
+    margin-left: 40px;
+}
+.middle-space-X{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding: 5px;
+}
+.middle-space-text P{
+    margin-left: 10px;
+    font-size: 17px;
+}
+.middle-space-text li{
+    font-size: 17px;
+}
+.middle-space-X button{
+    width: 50px;
+    height: 50px;
+}
+.project-name{
+    text-align: center;
+    display: block;
+}
+.button-X{
+    background-color: white;
+    border-radius: 10px;
+}
+i{
+    font-size: 30px;
+    margin: 5px;
+}
+.Github-a{
+    text-decoration: underline; 
+    color: dodgerblue;
+}
+.Github-a:hover{
+    cursor: pointer;
+}
+.Github-a:visited{
+    text-decoration: underline; 
+    color: dodgerblue;
+}
